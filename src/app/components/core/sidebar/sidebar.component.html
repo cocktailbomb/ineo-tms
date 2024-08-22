@@ -1,0 +1,19 @@
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" [ngClass]="{ 'toggled': toggled }" id="accordionSidebar">
+    <!-- Sidebar - Brand -->
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" [routerLink]="['/']">
+      <div class="sidebar-brand-icon rotate-n-15">
+          <fa-icon [icon]="['fas', 'calendar']" size="lg" ></fa-icon>
+      </div>
+      <div class="sidebar-brand-text mx-3">TMS</div>
+  </a>
+  <hr class="sidebar-divider">
+
+
+
+  <div class="text-center d-none d-md-inline">
+    <button id="sidebarToggle" class="rounded-circle border-0" (click)="toggle()">
+        <fa-icon [icon]="[ 'fas', 'angle-left']" *ngIf="!toggled" [ngStyle]="{ 'color': 'rgba(255,255,255,.5)'} "></fa-icon>
+        <fa-icon [icon]="[ 'fas', 'angle-right']" *ngIf="toggled" [ngStyle]="{ 'color': 'rgba(255,255,255,.5)'} "></fa-icon>
+    </button>
+  </div>
+</ul>

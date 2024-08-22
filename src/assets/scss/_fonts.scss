@@ -1,0 +1,21 @@
+@import "mixins";
+
+/*font faces*/
+@include font-face("Nunito", "/fonts/nunito/nunito-v12-latin-200", 200, normal, woff2 woff);
+@include font-face("Nunito", "/fonts/nunito/nunito-v12-latin-300", 300, normal, woff2 woff);
+@include font-face("Nunito", "/fonts/nunito/nunito-v12-latin-regular", 400, normal, woff2 woff);
+@include font-face("Nunito", "/fonts/nunito/nunito-v12-latin-500", 500, normal, woff2 woff);
+@include font-face("Nunito", "/fonts/nunito/nunito-v12-latin-600", 600, normal, woff2 woff);
+@include font-face("Nunito", "/fonts/nunito/nunito-v12-latin-700", 700, normal, woff2 woff);
+@include font-face("Nunito", "/fonts/nunito/nunito-v12-latin-800", 800, normal, woff2 woff);
+@include font-face("Nunito", "/fonts/nunito/nunito-v12-latin-900", 900, normal, woff2 woff);
+@include font-face("Nunito", "/fonts/nunito/nunito-v12-latin-200italic", 200, italic, woff2 woff);
+@include font-face("Nunito", "/fonts/nunito/nunito-v12-latin-300italic", 300, italic, woff2 woff);
+@include font-face("Nunito", "/fonts/nunito/nunito-v12-latin-italic", 400, italic, woff2 woff);
+@include font-face("Nunito", "/fonts/nunito/nunito-v12-latin-500italic", 500, italic, woff2 woff);
+@include font-face("Nunito", "/fonts/nunito/nunito-v12-latin-600italic", 600, italic, woff2 woff);
+@include font-face("Nunito", "/fonts/nunito/nunito-v12-latin-700italic", 700, italic, woff2 woff);
+@include font-face("Nunito", "/fonts/nunito/nunito-v12-latin-800italic", 800, italic, woff2 woff);
+@include font-face("Nunito", "/fonts/nunito/nunito-v12-latin-900italic", 900, italic, woff2 woff);
+
+/*end font faces*/

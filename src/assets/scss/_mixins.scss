@@ -1,0 +1,19 @@
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+    $src: null;
+    $extmods: ( eot: "?iefix", svg: "#" + str-replace($name, " ", "_"));
+    $formats: ( eot: "embedded-opentype", otf: "opentype", ttf: "truetype");
+    $comments: ( eot: "/*IE6-IE8*/", woff2: "/*Super Modern Browsers*/", woff: "/*Modern Browsers*/", ttf: "/*Safari, Android, iOS*/", svg: "/*Legacy iOS*/");
+    @each $ext in $exts {
+        $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+        $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+        $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)) + " " + if(map-has-key($comments, $ext), map-get($comments, $ext), $ext), comma);
+    }
+    @font-face {
+        font-family: quote($name);
+        font-style: $style;
+        font-weight: $weight;
+        font-display: swap;
+        src: url(quote($path + ".eot")) + " /* IE9 Compat Modes */";
+        src: local(''), $src;
+    }
+}
